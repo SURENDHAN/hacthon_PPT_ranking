@@ -93,7 +93,7 @@ def load_llm_model():
         return ChatGoogleGenerativeAI(
             model="gemini-1.5-pro",
             temperature=0.1,
-            google_api_key='AIzaSyDlYC_kPXmiDCd6Xj9EvdAzxE7X0RF-u14' 
+            google_api_key='AIzaSyDlYC_kPXmiDCd6Xj9EvdAzxE7X0R' 
         )
     except Exception as e:
         st.error(f"Failed to load LLM model: {e}")
