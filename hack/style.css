@@ -1,0 +1,322 @@
+.main .block-container {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1e3a8a;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #0369a1;
+}
+
+h2 {
+    color: #1e40af;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease;
+}
+
+h2:hover {
+    transform: translateX(5px);
+}
+
+h3 {
+    color: #1e40af;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 0.75rem;
+}
+
+h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to bottom, #0284c7, #06d6a0);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+}
+
+h3:hover::before {
+    transform: scaleY(1);
+}
+
+.stProgress > div > div {
+    background: linear-gradient(90deg, #06d6a0, #0284c7);
+    height: 8px;
+    border-radius: 4px;
+}
+
+.score-box {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.score-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.score-label {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #4b5563;
+    margin-bottom: 5px;
+}
+
+.score-value {
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(135deg, #0284c7, #075985);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.score-box:hover .score-value {
+    background: linear-gradient(135deg, #06d6a0, #0284c7);
+    transform: scale(1.05);
+}
+
+.weighted-score {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #075985;
+    margin: 0.5rem 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.weighted-score:hover {
+    color: #0369a1;
+    transform: scale(1.05);
+}
+
+.weight-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weight-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rank-1 {
+    background: linear-gradient(135deg, #FFD700, #FFC400);
+    color: #1e3a8a;
+    font-weight: 700;
+    border-left: 4px solid #1e3a8a;
+}
+
+.rank-2 {
+    background: linear-gradient(135deg, #E5E5E5, #D1D1D1);
+    color: #1e3a8a;
+    font-weight: 700;
+    border-left: 4px solid #1e3a8a;
+}
+
+.rank-3 {
+    background: linear-gradient(135deg, #CD7F32, #B87333);
+    color: white;
+    font-weight: 700;
+    border-left: 4px solid #1e3a8a;
+}
+
+.ranking-table {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ranking-table th {
+    background: linear-gradient(135deg, #1e3a8a, #1e40af);
+    color: white;
+    font-weight: 600;
+    padding: 12px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.ranking-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.2s ease;
+}
+
+.ranking-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.ranking-table tr:hover td {
+    background-color: #e0f2fe;
+}
+
+.file-info {
+    font-size: 0.95em;
+    color: #4b5563;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    transition: color 0.3s ease;
+}
+
+.file-info:hover {
+    color: #0284c7;
+}
+
+.stButton > button {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 0.5rem 1.25rem;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #0284c7, #075985);
+    color: white;
+    border: none;
+}
+
+.stButton > button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+    background: linear-gradient(135deg, #0369a1, #0284c7);
+}
+
+.stButton > button:active {
+    transform: translateY(1px);
+}
+
+.stExpander {
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.stExpander:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stExpander .stExpanderContent {
+    padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .main .block-container {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .weighted-score {
+        font-size: 2.5rem;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.stAlert, .stMarkdown, .stDataFrame {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.slide-in {
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #075985;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
